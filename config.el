@@ -94,9 +94,9 @@
 
 ;;; :tools magit
 (setq magit-repository-directories '(("~/projects" . 2))
-      magit-save-repository-buffers nil
+      ;; magit-save-repository-buffers nil
       ;; Don't restore the wconf after quitting magit, it's jarring
-      magit-inhibit-save-previous-winconf t
+      ;; magit-inhibit-save-previous-winconf t
       transient-values '((magit-rebase "--autosquash" "--autostash")
                          (magit-pull "--rebase" "--autostash")
                          (magit-revert "--autostash")))
@@ -131,7 +131,13 @@
            :prepend t)
           ("c" "check out later" entry (file+headline "todo.org" "Check out later")
            "* [ ] %?\n%i\n%a"
-           :prepend t))))
+           :prepend t)))
+  (setq org-latex-classes
+        '(("lecture"
+           "\\documentclass[english,seminar]{lecture}"
+           ("\\section*{%s}")
+           ("\\subsection*{%s}")
+           ("\\subsubsection*{%s}")))))
 
 (after! org-roam
   (setq org-roam-capture-templates
