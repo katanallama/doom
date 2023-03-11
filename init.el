@@ -28,7 +28,7 @@
        (ivy                ; a search engine for love and life
         +childframe
         +fuzzy
-        icons)
+        +icons)
        ;; vertico             ; the search engine of the future
 
        :ui
@@ -161,7 +161,8 @@
        ;;lua               ; one-based indices? one-based indices
        markdown            ; writing docs for people to ignore
        ;;nim               ; python + lisp at the speed of c
-       nix                 ; I hereby declare "nix geht mehr!"
+       (nix                ; I hereby declare "nix geht mehr!"
+        +tree-sitter)
        ;;ocaml             ; an objective camel
        (org                ; organize your plain life in plain text
         +ditaa

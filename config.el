@@ -2,8 +2,8 @@
 ;;;
 ;; UI
 (setq doom-theme 'doom-dracula
-      doom-font (font-spec :family "JetBrainsMono" :size 26 :weight 'light)
-      doom-variable-pitch-font (font-spec :family "DejaVu Sans" :size 24)
+      doom-font (font-spec :family "JetBrainsMono" :size 16 :weight 'light)
+      doom-variable-pitch-font (font-spec :family "DejaVu Sans" :size 14)
       fancy-splash-image (concat doom-user-dir "splash.png"))
 ;;
 ;;; Keybinds
